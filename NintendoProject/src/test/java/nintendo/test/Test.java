@@ -1,8 +1,11 @@
 package nintendo.test;
 
+import java.io.Console;
+
 import nintendo.model.Adresse;
 import nintendo.model.Boutique;
 import nintendo.model.Client;
+import nintendo.model.Jeu;
 
 public class Test {
 
@@ -14,17 +17,17 @@ public class Test {
 		Client clientD1 = new Client("Floyd", "George");
 		Client clientD2 = new Client("Valls", "Emmanuel");
 
-		Console c1 = new Console();
-		Console c2 = new Console();
-		Console c3 = new Console();
-		Console c4 = new Console();
-		Console c5 = new Console();
+		Console c1 = new Console("swatch 1");
+		Console c2 = new Console("swatch 2");
+		Console c3 = new Console("3do");
+		Console c4 = new Console("2d");
+		Console c5 = new Console("playstation");
 		
-		Jeu j1 = new Jeu(...);
-		Jeu j2 = new Jeu(...);
-		Jeu j3 = new Jeu(...);
-		Jeu j4 = new Jeu(...);
-		Jeu j5 = new Jeu(...);
+		Jeu j1 = new Jeu("mario kart",c1,boutiqueD);
+		Jeu j2 = new Jeu("animal across",c2,boutiqueD);
+		Jeu j3 = new Jeu("Jordan adventure country returns",c3,boutiqueD);
+		Jeu j4 = new Jeu("mario kart",c4,boutiqueD);
+		Jeu j5 = new Jeu("mario kart",c5,boutiqueD);
 	}
 
 }
