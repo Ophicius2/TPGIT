@@ -1,11 +1,14 @@
 package nintendo.test;
 
-import java.io.Console;
+import java.time.LocalDate;
 
 import nintendo.model.Adresse;
 import nintendo.model.Boutique;
 import nintendo.model.Client;
+import nintendo.model.Hybride;
 import nintendo.model.Jeu;
+import nintendo.model.Portable;
+import nintendo.model.Salon;
 
 public class Test {
 
@@ -17,11 +20,11 @@ public class Test {
 		Client clientD1 = new Client("Floyd", "George");
 		Client clientD2 = new Client("Valls", "Emmanuel");
 
-		Console c1 = new Console("swatch 1");
-		Console c2 = new Console("swatch 2");
-		Console c3 = new Console("3do");
-		Console c4 = new Console("2d");
-		Console c5 = new Console("playstation");
+		Hybride c1 = new Hybride("swatch 1",4000,LocalDate.parse("2020-08-10"));
+		Hybride c2 = new Hybride("swatch 2",5000,LocalDate.parse("2025-08-10"));
+		Portable c3 = new Portable("3do",4000,LocalDate.parse("2020-08-10"));
+		Portable c4 = new Portable("2d",4000,LocalDate.parse("2020-08-10"));
+		Salon c5 = new Salon("playstation",4000,LocalDate.parse("2020-08-10"));
 		
 		Jeu j1 = new Jeu("mario kart",c1,boutiqueD);
 		Jeu j2 = new Jeu("animal across",c2,boutiqueD);
