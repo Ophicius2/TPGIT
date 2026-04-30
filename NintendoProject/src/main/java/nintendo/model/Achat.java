@@ -8,7 +8,7 @@ public class Achat {
 	LocalDate dateachat;
 	double prix;
 	
-	public void Achat (Jeu jeu,LocalDate dateachat,double prix) {
+	public Achat (Jeu jeu,LocalDate dateachat,double prix) {
 		this.jeu = jeu;
 		this.dateachat = dateachat;
 		this.prix = prix;
