@@ -1,11 +1,17 @@
 package nintendo.model;
 
+import java.time.LocalDate;
+
 public abstract class Console {
 
 	private String nom;
+	private double prix;
+	private LocalDate dateDeSortie;
 
-	public Console(String nom) {
+	public Console(String nom, double prix, LocalDate dateDeSortie) {
 		this.nom = nom;
+		this.prix = prix;
+		this.dateDeSortie = dateDeSortie;
 	}
 
 	public String getNom() {
@@ -14,6 +20,22 @@ public abstract class Console {
 
 	public void setNom(String nom) {
 		this.nom = nom;
+	}
+
+	public double getPrix() {
+		return prix;
+	}
+
+	public void setPrix(double prix) {
+		this.prix = prix;
+	}
+
+	public LocalDate getDateDeSortie() {
+		return dateDeSortie;
+	}
+
+	public void setDateDeSortie(LocalDate dateDeSortie) {
+		this.dateDeSortie = dateDeSortie;
 	}
 
 	@Override
