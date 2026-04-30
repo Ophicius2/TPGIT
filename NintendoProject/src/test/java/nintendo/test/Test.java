@@ -13,6 +13,18 @@ public class Test {
 		
 		Client clientD1 = new Client("Floyd", "George");
 		Client clientD2 = new Client("Valls", "Emmanuel");
+
+		Console c1 = new Console();
+		Console c2 = new Console();
+		Console c3 = new Console();
+		Console c4 = new Console();
+		Console c5 = new Console();
+		
+		Jeu j1 = new Jeu(...);
+		Jeu j2 = new Jeu(...);
+		Jeu j3 = new Jeu(...);
+		Jeu j4 = new Jeu(...);
+		Jeu j5 = new Jeu(...);
 	}
 
 }
