@@ -4,12 +4,26 @@ public class Jeu {
 
 	private String titre;
 	private Console console;
-	
-	
-	
-	public Jeu(String titre, Console console) {
+	private Boutique boutique;
+
+	public Jeu(String titre, Console console, Boutique boutique) {
 		this.titre = titre;
 		this.console = console;
+		this.boutique = boutique;
+	}
+
+
+	
+	
+
+	public Boutique getBoutique() {
+		return boutique;
+	}
+
+
+
+	public void setBoutique(Boutique boutique) {
+		this.boutique = boutique;
 	}
 
 
