@@ -6,6 +6,15 @@ public class Adresse {
 	private String ville;
 	
 	
+	
+	
+	public Adresse(String numero, String rue, String ville) {
+		this.numero = numero;
+		this.rue = rue;
+		this.ville = ville;
+	}
+
+
 	public String getNumero() {
 		return numero;
 	}
